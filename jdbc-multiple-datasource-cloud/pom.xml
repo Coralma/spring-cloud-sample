@@ -3,7 +3,7 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.coral</groupId>
-    <artifactId>jpa-multiple-datasource-cloud</artifactId>
+    <artifactId>jdbc-multiple-datasource-cloud</artifactId>
     <version>1.0.0</version>
     <packaging>jar</packaging>
 
@@ -70,7 +70,7 @@
         </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-data-jpa</artifactId>
+            <artifactId>spring-boot-starter-jdbc</artifactId>
         </dependency>
     </dependencies>
 

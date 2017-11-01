@@ -1,21 +1,22 @@
-package com.didispace;
+package com.coral.jpa.mds.test;
 
-import com.didispace.domain.p.User;
-import com.didispace.domain.p.UserRepository;
-import com.didispace.domain.s.Message;
-import com.didispace.domain.s.MessageRepository;
+import com.coral.jpa.mds.Application;
+import com.coral.jpa.message.domain.Message;
+import com.coral.jpa.message.domain.MessageRepository;
+import com.coral.jpa.user.domain.User;
+import com.coral.jpa.user.domain.UserRepository;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.test.SpringApplicationConfiguration;
+import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
 
 @RunWith(SpringJUnit4ClassRunner.class)
-@SpringApplicationConfiguration(Application.class)
-public class ApplicationTests {
+@SpringBootTest(classes = Application.class)
+public class JpaMdsApplicationTests {
 
 	@Autowired
 	private UserRepository userRepository;
