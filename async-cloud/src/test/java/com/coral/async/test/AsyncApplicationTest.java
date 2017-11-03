@@ -33,7 +33,7 @@ public class AsyncApplicationTest {
                 // 三个任务都调用完成，退出循环等待
                 break;
             }
-            Thread.sleep(1000);
+            //Thread.sleep(1000);
         }
 
         long end = System.currentTimeMillis();
